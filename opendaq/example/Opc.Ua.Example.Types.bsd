@@ -1,0 +1,10 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://hbk.org/OpcUa/Example" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://hbk.org/OpcUa/Example">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ExampleStructure">
+        <opc:Documentation>An example strucutre.</opc:Documentation>
+        <opc:Field TypeName="opc:Double" Name="DoubleVariable"/>
+        <opc:Field TypeName="opc:CharArray" Name="StringVariable"/>
+        <opc:Field TypeName="opc:Int32" Name="Int32Variable"/>
+        <opc:Field TypeName="opc:Boolean" Name="BoolVariable"/>
+    </opc:StructuredType>
+</opc:TypeDictionary>

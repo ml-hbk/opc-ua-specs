@@ -1,0 +1,160 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="https://docs.opendaq.io/specifications/opc-ua/daq/vendor/hbk" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ns1="https://docs.opendaq.io/specifications/opc-ua/daq/bt" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="https://docs.opendaq.io/specifications/opc-ua/daq/vendor/hbk">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:Import Namespace="https://docs.opendaq.io/specifications/opc-ua/daq/bt"/>
+    <opc:StructuredType BaseType="ns1:DaqBaseStructure" Name="DaqHbkVendorStructure"/>
+    <opc:StructuredType BaseType="tns:DaqHbkVendorStructure" Name="AdjustmentPointScalingStructure">
+        <opc:Field TypeName="opc:UInt32" Name="Index"/>
+        <opc:Field TypeName="opc:Float" Name="Factor"/>
+        <opc:Field TypeName="opc:Float" Name="Offset"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:DaqHbkVendorStructure" Name="CalibrationMeasuredValueStructure">
+        <opc:Field TypeName="opc:Double" Name="ActualValue"/>
+        <opc:Field TypeName="opc:Double" Name="LinearityDeviation"/>
+        <opc:Field TypeName="opc:Double" Name="NominalValue"/>
+        <opc:Field TypeName="ua:Range" Name="Limits"/>
+        <opc:Field TypeName="opc:Double" Name="Uncertainty"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:DaqHbkVendorStructure" Name="DeviationStructure">
+        <opc:Field TypeName="opc:CharArray" Name="RangeRelated"/>
+        <opc:Field TypeName="opc:CharArray" Name="RRValue"/>
+        <opc:Field TypeName="opc:CharArray" Name="ValueRelated"/>
+        <opc:Field TypeName="opc:CharArray" Name="VRValue"/>
+        <opc:Field TypeName="opc:CharArray" Name="NonLinearity"/>
+        <opc:Field TypeName="opc:CharArray" Name="DeviationSum"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:DaqHbkVendorStructure" Name="ExcitationVoltageStructure">
+        <opc:Field TypeName="opc:Double" Name="ActualValue"/>
+        <opc:Field TypeName="opc:Double" Name="NominalValue"/>
+        <opc:Field TypeName="ua:Range" Name="NominalValueRange"/>
+        <opc:Field TypeName="tns:ExcitationTypeEnumeration" Name="Type"/>
+        <opc:Field TypeName="opc:UInt32" Name="Frequency"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:DaqHbkVendorStructure" Name="InternalTestDescriptionStructure">
+        <opc:Field TypeName="opc:UInt32" Name="Index"/>
+        <opc:Field TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field TypeName="opc:CharArray" Name="Description"/>
+        <opc:Field TypeName="opc:CharArray" Name="DescriptionArgvUInt64"/>
+        <opc:Field TypeName="opc:CharArray" Name="DescriptionArgvString"/>
+        <opc:Field TypeName="opc:CharArray" Name="DescriptionArgvDouble"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:DaqHbkVendorStructure" Name="PeriodicalSignalStructure">
+        <opc:Field TypeName="opc:Double" Name="Amplitude"/>
+        <opc:Field TypeName="opc:Double" Name="Offset"/>
+        <opc:Field TypeName="opc:Double" Name="Frequency"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:DaqHbkVendorStructure" Name="ScalingStructure"/>
+    <opc:StructuredType BaseType="tns:ScalingStructure" Name="GainScalingStructure">
+        <opc:Field TypeName="opc:Double" Name="Factor"/>
+        <opc:Field TypeName="opc:Double" Name="Offset"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ScalingStructure" Name="GaugeScalingStructure">
+        <opc:Field TypeName="opc:Double" Name="BridgeFactor"/>
+        <opc:Field TypeName="opc:Double" Name="GaugeFactor"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ScalingStructure" Name="LinearTableScalingStructure">
+        <opc:Field TypeName="opc:Double" Name="ElectricalValue"/>
+        <opc:Field TypeName="opc:Double" Name="EngineeringValue"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ScalingStructure" Name="PolynomialScalingStructure">
+        <opc:Field TypeName="opc:Double" Name="A0"/>
+        <opc:Field TypeName="opc:Double" Name="A1"/>
+        <opc:Field TypeName="opc:Double" Name="A2"/>
+        <opc:Field TypeName="opc:Double" Name="A3"/>
+        <opc:Field TypeName="opc:Double" Name="A4"/>
+        <opc:Field TypeName="ua:Range" Name="Range"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ScalingStructure" Name="SensitivityScalingStructure">
+        <opc:Field TypeName="opc:Double" Name="Factor"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:DaqHbkVendorStructure" Name="SensorTypeStructure"/>
+    <opc:StructuredType BaseType="tns:SensorTypeStructure" Name="BridgeSensorStructure">
+        <opc:Field TypeName="tns:ExcitationVoltageStructure" Name="ExcitationVoltage"/>
+        <opc:Field TypeName="opc:Double" Name="Resistance"/>
+        <opc:Field TypeName="opc:Double" Name="MaximumElectrical"/>
+        <opc:Field TypeName="opc:Byte" Name="UsedWires"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:BridgeSensorStructure" Name="FullBridgeSensorStructure">
+        <opc:Field SourceType="tns:BridgeSensorStructure" TypeName="tns:ExcitationVoltageStructure" Name="ExcitationVoltage"/>
+        <opc:Field SourceType="tns:BridgeSensorStructure" TypeName="opc:Double" Name="Resistance"/>
+        <opc:Field SourceType="tns:BridgeSensorStructure" TypeName="opc:Double" Name="MaximumElectrical"/>
+        <opc:Field SourceType="tns:BridgeSensorStructure" TypeName="opc:Byte" Name="UsedWires"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:BridgeSensorStructure" Name="HalfBridgeSensorStructure">
+        <opc:Field SourceType="tns:BridgeSensorStructure" TypeName="tns:ExcitationVoltageStructure" Name="ExcitationVoltage"/>
+        <opc:Field SourceType="tns:BridgeSensorStructure" TypeName="opc:Double" Name="Resistance"/>
+        <opc:Field SourceType="tns:BridgeSensorStructure" TypeName="opc:Double" Name="MaximumElectrical"/>
+        <opc:Field SourceType="tns:BridgeSensorStructure" TypeName="opc:Byte" Name="UsedWires"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:BridgeSensorStructure" Name="QuarterBridgeSensorStructure">
+        <opc:Field SourceType="tns:BridgeSensorStructure" TypeName="tns:ExcitationVoltageStructure" Name="ExcitationVoltage"/>
+        <opc:Field SourceType="tns:BridgeSensorStructure" TypeName="opc:Double" Name="Resistance"/>
+        <opc:Field SourceType="tns:BridgeSensorStructure" TypeName="opc:Double" Name="MaximumElectrical"/>
+        <opc:Field SourceType="tns:BridgeSensorStructure" TypeName="opc:Byte" Name="UsedWires"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:SensorTypeStructure" Name="IEPESensorStructure">
+        <opc:Field TypeName="opc:Double" Name="MaximumElectrical"/>
+        <opc:Field TypeName="opc:Double" Name="CurrentSensorSupply"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:SensorTypeStructure" Name="PotentiometerSensorStructure">
+        <opc:Field TypeName="opc:Double" Name="Resistance"/>
+        <opc:Field TypeName="opc:Byte" Name="UsedWires"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:SensorTypeStructure" Name="PtSensorStructure">
+        <opc:Field TypeName="opc:Byte" Name="UsedWires"/>
+        <opc:Field TypeName="opc:Double" Name="Resistance"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:SensorTypeStructure" Name="VoltageSensorStructure">
+        <opc:Field TypeName="opc:Double" Name="MaximumElectrical"/>
+        <opc:Field TypeName="opc:Double" Name="VoltageSensorSupply"/>
+        <opc:Field TypeName="opc:Boolean" Name="GuardLine"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:DaqHbkVendorStructure" Name="ShuntStructure">
+        <opc:Field TypeName="opc:Boolean" Name="Active"/>
+        <opc:Field TypeName="opc:Double" Name="Resistance"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:DaqHbkVendorStructure" Name="TimeCompensationStructure">
+        <opc:Field TypeName="tns:TimeCompensationEnumeration" Name="Mode"/>
+        <opc:Field TypeName="opc:UInt64" Name="ManualValue"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="ExcitationTypeEnumeration">
+        <opc:Documentation>The  enumeration  defines  the  possible  excitation  voltage  shape  and  whether  it  is  relevant  for the sensor.</opc:Documentation>
+        <opc:EnumeratedValue Name="DoNotCare" Value="0"/>
+        <opc:EnumeratedValue Name="DCVoltage" Value="1"/>
+        <opc:EnumeratedValue Name="ACVoltage" Value="2"/>
+        <opc:EnumeratedValue Name="ACVoltageRectangle" Value="3"/>
+        <opc:EnumeratedValue Name="ACVoltageSinewave" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="FanControllerModeEnumeration">
+        <opc:EnumeratedValue Name="Silent" Value="0"/>
+        <opc:EnumeratedValue Name="Factory" Value="1"/>
+        <opc:EnumeratedValue Name="Office" Value="2"/>
+        <opc:EnumeratedValue Name="Maximum" Value="3"/>
+        <opc:EnumeratedValue Name="Cold" Value="4"/>
+        <opc:EnumeratedValue Name="Warm" Value="5"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="RoleEnumeration">
+        <opc:EnumeratedValue Name="User" Value="0"/>
+        <opc:EnumeratedValue Name="Admin" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="SignalStatusEnumeration">
+        <opc:EnumeratedValue Name="Ok" Value="0"/>
+        <opc:EnumeratedValue Name="Warning" Value="1"/>
+        <opc:EnumeratedValue Name="Error" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="SlotStatusEnumeration">
+        <opc:EnumeratedValue Name="CardInserted" Value="0"/>
+        <opc:EnumeratedValue Name="CardPowered" Value="1"/>
+        <opc:EnumeratedValue Name="CardOperational" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="TemperatureStatusEnumeration">
+        <opc:EnumeratedValue Name="Normal" Value="0"/>
+        <opc:EnumeratedValue Name="High" Value="1"/>
+        <opc:EnumeratedValue Name="Overheat" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="TimeCompensationEnumeration">
+        <opc:EnumeratedValue Name="Off" Value="0"/>
+        <opc:EnumeratedValue Name="Auto" Value="1"/>
+        <opc:EnumeratedValue Name="ManualOnly" Value="2"/>
+        <opc:EnumeratedValue Name="AutoManual" Value="3"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
