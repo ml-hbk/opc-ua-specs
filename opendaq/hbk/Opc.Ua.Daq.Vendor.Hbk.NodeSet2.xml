@@ -7792,6 +7792,7 @@
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
             <Reference ReferenceType="HasComponent">ns=1;i=6011</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6061</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7476</Reference>
         </References>
         <Value>
             <uax:Double>0</uax:Double>
@@ -7821,6 +7822,23 @@
             <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6004</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Double" ParentNodeId="ns=1;i=6004" ValueRank="1" NodeId="ns=1;i=7476" ArrayDimensions="0" BrowseName="2:SuggestedValues">
+        <DisplayName>SuggestedValues</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=7477</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6004</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" ParentNodeId="ns=1;i=7476" NodeId="ns=1;i=7477" BrowseName="2:EvaluationExpression">
+        <DisplayName>EvaluationExpression</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=7476</Reference>
         </References>
     </UAVariable>
     <UAVariable DataType="Int64" ParentNodeId="ns=1;i=1003" NodeId="ns=1;i=6005" BrowseName="1:ImpulseResponse" AccessLevel="3">
