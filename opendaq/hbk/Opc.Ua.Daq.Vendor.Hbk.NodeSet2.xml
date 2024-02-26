@@ -8423,7 +8423,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6025</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6708</Reference>
         </References>
@@ -8459,7 +8459,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6023</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6734</Reference>
         </References>
@@ -8503,7 +8503,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6710</Reference>
         </References>
@@ -8539,7 +8539,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6137</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6732</Reference>
         </References>
