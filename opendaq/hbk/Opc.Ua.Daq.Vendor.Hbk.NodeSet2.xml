@@ -4519,7 +4519,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=7284</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Structure" ParentNodeId="ns=1;i=7281" NodeId="ns=1;i=7282" BrowseName="2:DefaultValue" AccessLevel="3">
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=7281" NodeId="ns=1;i=7282" BrowseName="2:DefaultValue" AccessLevel="3">
         <DisplayName>DefaultValue</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
@@ -4569,7 +4569,7 @@
             </uax:ExtensionObject>
         </Value>
     </UAVariable>
-    <UAVariable DataType="Structure" ParentNodeId="ns=1;i=7266" NodeId="ns=1;i=7273" BrowseName="2:DefaultValue" AccessLevel="3">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=7266" NodeId="ns=1;i=7273" BrowseName="2:DefaultValue" AccessLevel="3">
         <DisplayName>DefaultValue</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
@@ -17454,7 +17454,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6741</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Structure" ParentNodeId="ns=1;i=6721" NodeId="ns=1;i=6739" BrowseName="2:DefaultValue" AccessLevel="3">
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6721" NodeId="ns=1;i=6739" BrowseName="2:DefaultValue" AccessLevel="3">
         <DisplayName>DefaultValue</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
