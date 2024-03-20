@@ -9,7 +9,7 @@
         <Uri>http://opcfoundation.org/UA/DI/</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/vendor/hbk" PublicationDate="2023-11-09T18:57:17Z" Version="3.0.12">
+        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/vendor/hbk" PublicationDate="2024-03-24T09:00:00Z" Version="3.0.13">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2022-11-01T00:00:00Z" Version="1.05.02"/>
             <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" PublicationDate="2022-11-03T00:00:00Z" Version="1.04.0"/>
             <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bt" PublicationDate="2023-11-01T13:49:35Z" Version="3.0.2"/>
@@ -4519,7 +4519,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=7284</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Structure" ParentNodeId="ns=1;i=7281" NodeId="ns=1;i=7282" BrowseName="2:DefaultValue" AccessLevel="3">
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=7281" NodeId="ns=1;i=7282" BrowseName="2:DefaultValue" AccessLevel="3">
         <DisplayName>DefaultValue</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
@@ -4569,7 +4569,7 @@
             </uax:ExtensionObject>
         </Value>
     </UAVariable>
-    <UAVariable DataType="Structure" ParentNodeId="ns=1;i=7266" NodeId="ns=1;i=7273" BrowseName="2:DefaultValue" AccessLevel="3">
+    <UAVariable DataType="EUInformation" ParentNodeId="ns=1;i=7266" NodeId="ns=1;i=7273" BrowseName="2:DefaultValue" AccessLevel="3">
         <DisplayName>DefaultValue</DisplayName>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
@@ -8279,7 +8279,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6017</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6704</Reference>
         </References>
@@ -8387,7 +8387,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6019</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6706</Reference>
         </References>
@@ -8423,7 +8423,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6025</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6708</Reference>
         </References>
@@ -8459,7 +8459,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6023</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6734</Reference>
         </References>
@@ -8503,7 +8503,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6024</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6710</Reference>
         </References>
@@ -8539,7 +8539,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6137</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6732</Reference>
         </References>
@@ -8622,7 +8622,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6021</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6866</Reference>
         </References>
@@ -8659,7 +8659,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6022</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6868</Reference>
         </References>
@@ -8878,7 +8878,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6028</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6795</Reference>
         </References>
@@ -8914,7 +8914,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6048</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6797</Reference>
         </References>
@@ -8950,7 +8950,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6060</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6799</Reference>
         </References>
@@ -8994,7 +8994,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6062</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6801</Reference>
         </References>
@@ -9030,7 +9030,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6064</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6803</Reference>
         </References>
@@ -9066,7 +9066,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6645</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6805</Reference>
         </References>
@@ -9102,7 +9102,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6653</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6807</Reference>
         </References>
@@ -9164,7 +9164,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6347</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6816</Reference>
         </References>
@@ -9200,7 +9200,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6348</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6822</Reference>
         </References>
@@ -9244,7 +9244,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6350</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6824</Reference>
         </References>
@@ -9280,7 +9280,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6351</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6834</Reference>
         </References>
@@ -9316,7 +9316,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6499</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6840</Reference>
         </References>
@@ -9352,7 +9352,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6500</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6846</Reference>
         </References>
@@ -9564,7 +9564,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6083</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6852</Reference>
         </References>
@@ -9600,7 +9600,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6084</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6854</Reference>
         </References>
@@ -9636,7 +9636,7 @@
         <Description>Shows the default value of the variable.</Description>
         <References>
             <Reference ReferenceType="HasTypeDefinition">ns=2;i=2001</Reference>
-            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=6082</Reference>
             <Reference ReferenceType="HasProperty">ns=1;i=6856</Reference>
         </References>
@@ -17454,7 +17454,7 @@
             <Reference ReferenceType="HasProperty">ns=1;i=6741</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="Structure" ParentNodeId="ns=1;i=6721" NodeId="ns=1;i=6739" BrowseName="2:DefaultValue" AccessLevel="3">
+    <UAVariable DataType="Range" ParentNodeId="ns=1;i=6721" NodeId="ns=1;i=6739" BrowseName="2:DefaultValue" AccessLevel="3">
         <DisplayName>DefaultValue</DisplayName>
         <References>
             <Reference ReferenceType="HasModellingRule">i=78</Reference>
