@@ -9,7 +9,7 @@
         <Uri>http://opcfoundation.org/UA/DI/</Uri>
     </NamespaceUris>
     <Models>
-        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/vendor/hbk" PublicationDate="2024-03-24T09:00:00Z" Version="3.0.13">
+        <Model ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/vendor/hbk" PublicationDate="2024-03-25T14:00:00Z" Version="3.0.14">
             <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2022-11-01T00:00:00Z" Version="1.05.02"/>
             <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" PublicationDate="2022-11-03T00:00:00Z" Version="1.04.0"/>
             <RequiredModel ModelUri="https://docs.opendaq.io/specifications/opc-ua/daq/bt" PublicationDate="2023-11-01T13:49:35Z" Version="3.0.2"/>
