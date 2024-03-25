@@ -14392,7 +14392,7 @@
             <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1049</Reference>
         </References>
     </UAVariable>
-    <UAVariable DataType="TimeCompensationEnumeration" ParentNodeId="ns=1;i=7086" NodeId="ns=1;i=7099" BrowseName="2:DefaultValue">
+    <UAVariable DataType="TimeCompensationStructure" ParentNodeId="ns=1;i=7086" NodeId="ns=1;i=7099" BrowseName="2:DefaultValue">
         <DisplayName>DefaultValue</DisplayName>
         <Description>Shows the default value of the variable.</Description>
         <References>
